@@ -4,7 +4,7 @@ import crypto, { randomBytes } from "crypto";
 import path from "path";
 
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const DATA_FILE = path.join("data","links.json"); 
 
 const serverfile = async(res,filepath,contentType) => {
